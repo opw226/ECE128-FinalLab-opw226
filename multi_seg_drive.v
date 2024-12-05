@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 12/03/2024 01:54:45 PM
+// Create Date: 10/01/2024 01:36:57 PM
 // Design Name: 
-// Module Name: multi_seg_drive
+// Module Name: top_module
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -100,4 +100,3 @@ module Seven_seg_decoder(clk, bcd,seg);
     endcase               
     end                
 endmodule
-

@@ -21,16 +21,18 @@
 
 
 module Calculator_tb();
+    reg clk;
     reg[3:0] a, b;
     reg[2:0] opp;
     wire[7:0] result;
     
-    calculator uut2(.a(a), .b(b), .op(opp), .result(result));
+    calculator uut2(.clk(clk), .a(a), .b(b), .op(opp), .result(result));
     
     initial begin
-        a = 4'b0001; b = 4'b0001; opp = 3'b000;
-        #10;
+        clk = 0;
+        a = 4'b0010; b = 4'b0010; opp = 3'b001;
+        forever #5 clk = ~clk;
         //a = 4'b0010; b = 4'b0001; opp = 3'b001;
-        #10;
+        
     end
 endmodule

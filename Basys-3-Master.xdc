@@ -5,7 +5,7 @@
 
 ## Clock signal
 set_property -dict { PACKAGE_PIN W5   IOSTANDARD LVCMOS33 } [get_ports clk]
-create_clock -add -name sys_clk_pin -period 10.00 -waveform {0 5} [get_ports clk]
+#create_clock -add -name sys_clk_pin -period 10.00 -waveform {0 5} [get_ports clk]
 
 
 ## Switches
@@ -24,7 +24,7 @@ set_property -dict { PACKAGE_PIN T2    IOSTANDARD LVCMOS33 } [get_ports {opp[2]}
 #set_property -dict { PACKAGE_PIN W2    IOSTANDARD LVCMOS33 } [get_ports {bcd_in[12]}]
 #set_property -dict { PACKAGE_PIN U1    IOSTANDARD LVCMOS33 } [get_ports {bcd_in[13]}]
 #set_property -dict { PACKAGE_PIN T1    IOSTANDARD LVCMOS33 } [get_ports {bcd_in[14]}]
-set_property -dict { PACKAGE_PIN R2    IOSTANDARD LVCMOS33 } [get_ports {en}]
+#set_property -dict { PACKAGE_PIN R2    IOSTANDARD LVCMOS33 } [get_ports {en}]
 
 
 ## LEDs
@@ -64,7 +64,7 @@ set_property -dict { PACKAGE_PIN W4   IOSTANDARD LVCMOS33 } [get_ports {sseg_a_o
 
 
 ##Buttons
-set_property -dict { PACKAGE_PIN U18   IOSTANDARD LVCMOS33 } [get_ports rst]
+#set_property -dict { PACKAGE_PIN U18   IOSTANDARD LVCMOS33 } [get_ports rst]
 #set_property -dict { PACKAGE_PIN T18   IOSTANDARD LVCMOS33 } [get_ports btnU]
 #set_property -dict { PACKAGE_PIN W19   IOSTANDARD LVCMOS33 } [get_ports btnL]
 #set_property -dict { PACKAGE_PIN T17   IOSTANDARD LVCMOS33 } [get_ports btnR]

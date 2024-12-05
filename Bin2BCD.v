@@ -1,4 +1,26 @@
-module Bin2BCD(
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date: 10/29/2024 01:29:59 PM
+// Design Name: 
+// Module Name: Bin2BCD
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
+
+
+module bin2BCD(
     input clk,
     input en,
     input [11:0] bin_d_in,

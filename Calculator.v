@@ -27,5 +27,5 @@ module calculator(
             default: result = 8'b00000000;
         endcase
     end
-   // assign rdy = 1'b1;
+
 endmodule
