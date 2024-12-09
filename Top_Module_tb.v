@@ -29,10 +29,27 @@ module Top_Module_tb();
     
     Top_Module uut1(.clk(clk), .a(a), .b(b), .opp(opp), .sseg_a_o(sseg_a_o), .sseg_c_o(sseg_c_o));
     
+    
+    always #5 clk = ~clk;
+    
     initial begin
         clk = 0;
-        a = 4'b001; b = 4'b0001; opp = 3'b000;
-        forever #5 clk = ~clk;
+        a = 4'b0010; b = 4'b0001; opp = 3'b000;
+        #500;
+        a = 4'b0010; b = 4'b0001; opp = 3'b001;
+        #500;
+        a = 4'b0010; b = 4'b0001; opp = 3'b010;
+        #500;
+        a = 4'b0010; b = 4'b0001; opp = 3'b011;
+        #500;
+        a = 4'b0010; b = 4'b0001; opp = 3'b100;
+        #500;
+        a = 4'b0010; b = 4'b0001; opp = 3'b101;
+        #500;
+        a = 4'b0010; b = 4'b0001; opp = 3'b110;
+        #500;
+        a = 4'b0010; b = 4'b0001; opp = 3'b111;
+        
     end
     
     
