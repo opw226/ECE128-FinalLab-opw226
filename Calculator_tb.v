@@ -28,11 +28,24 @@ module Calculator_tb();
     
     calculator uut2(.clk(clk), .a(a), .b(b), .op(opp), .result(result));
     
+    always #5 clk = ~clk;
+    
     initial begin
         clk = 0;
         a = 4'b0010; b = 4'b0010; opp = 3'b001;
-        forever #5 clk = ~clk;
-        //a = 4'b0010; b = 4'b0001; opp = 3'b001;
+        #10;
+        a = 4'b0011; b = 4'b1001; opp = 3'b010;
+        #10;
+        a = 4'b0110; b = 4'b0011; opp = 3'b011;
+        #10;
+        a = 4'b1010; b = 4'b0101; opp = 3'b100;
+        #10;
+        a = 4'b0010; b = 4'b1101; opp = 3'b101;
+        #10;
+        a = 4'b0010; b = 4'b1111; opp = 3'b110;
+        #10;
+        a = 4'b0110; b = 4'b1111; opp = 3'b111;
+        
         
     end
 endmodule
